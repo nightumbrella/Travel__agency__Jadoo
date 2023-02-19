@@ -49,15 +49,15 @@ const category = {
 
 const Category = () => {
   return (
-    <div className="text-center">
+    <div className="text-center mb-32">
       <h3 className="text-xl font-bold mb-2">{category.title}</h3>
-      <h1 className="text-5xl font-bold mb-16">{category.heading}</h1>
+      <h1 className="text-5xl font-bold mb-16 relative category__heading">{category.heading}</h1>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between ">
         {category.cat.map((item, id ) => (
-          <div key={id}>
+          <div key={id} className="relative z-[2000]">
             {item.map((data, index) => (
-              <div key={index} className="align-center relative flex z-10 flex-col items-center w-[267px] h-[314px] pt-11 category rounded-[36px]">
+              <div key={index} className="align-center relative flex z-80 flex-col items-center w-[267px] h-[314px] pt-11 category rounded-[36px]">
                 <img src={data.img} alt="images" className="mb-8"/>
                 <h3 className="mb-4 text-xl font-bold">{data.title}</h3>
                 <p className="w-44">{data.text}</p>

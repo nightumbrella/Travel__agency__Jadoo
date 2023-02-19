@@ -43,7 +43,15 @@ body {
   box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
 transition: .3s ease;
 position: relative;
-z-index: 50;
+z-index: 100;
+}
+.selling{
+  -webkit-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
+}
+/* .category{
+  z-index: 1000;
 }
 .category::after{
 position: absolute;
@@ -51,4 +59,11 @@ content: url("./images/flight__shape.png");
 z-index: -40;
 bottom: -32px;
 left: -30px; 
+} */
+.category__heading::after{
+  position: absolute;
+  top:-50px;
+  right: -55px;
+  content: url("./images/pattern.png");
+
 }
