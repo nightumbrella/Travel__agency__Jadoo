@@ -3,7 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/css?family=Volkhov:regular,italic,700,700italic);
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,22 +29,22 @@ body {
   position: absolute;
   z-index: -20;
 }
-.hero__title::after{
+.hero__title::after {
   content: url(./images/decore__under__text.png);
   top: 10px;
   right: -35px;
   position: absolute;
   z-index: -20;
 }
-.category:hover{
+.category:hover {
   -webkit-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
-transition: .3s ease;
-position: relative;
-z-index: 100;
+  transition: 0.3s ease;
+  position: relative;
+  z-index: 100;
 }
-.selling{
+.selling {
   -webkit-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
   box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
@@ -60,10 +59,40 @@ z-index: -40;
 bottom: -32px;
 left: -30px; 
 } */
-.category__heading::after{
+.category__heading::after {
   position: absolute;
-  top:-50px;
+  top: -50px;
   right: -55px;
   content: url("./images/pattern.png");
-
 }
+.selling--pse::after {
+  content: url("./images/decor__speral.png");
+  position: absolute;
+  right: -65px;
+  bottom: 185px;
+  z-index: -3;
+}
+.steps__right {
+  -webkit-box-shadow: 0px 6px 20px -5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 6px 20px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 6px 20px -5px rgba(34, 60, 80, 0.2);
+}
+.testimonials__shadow {
+  -webkit-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 10px 22px -11px rgba(34, 60, 80, 0.2);
+}
+.subscribe__btn{
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+}
+.subscribe__pse::after{
+  content: url("./images/send.png");
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+
+
